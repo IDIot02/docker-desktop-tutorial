@@ -14,3 +14,11 @@ docker container stop namacontainer
 
 docker container rm containerId/namacontainernya
 
+#selanjutnya kita bisa menggunakan perintah exec untuk mengeksekusi command pada container kita dengan perintah
+
+docker container exec -i -t namacontainer /bin/bash
+# disini kita akan masuk sebagai root, nanti didalamnya akan seperti menggunakan linux biasanya, dimana 
+# kita akan dapat menjalankan perintah tetapi dalam lingkup si docker container yang kita buat tadi
+# untuk keluar dari containernya, bisa dengan menggunakan perintah 
+    exit
+
